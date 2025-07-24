@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hair Donation System</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #fdf6f9; color: #4a2c53; }
+    header, section { padding: 2rem; }
+    h1, h2 { color: #a249b8; }
+    .btn { background: #a249b8; color: #fff; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; }
+    .certificate { border: 6px solid #d6b1e0; margin: 2rem auto; padding: 1rem; max-width: 600px; background: #fff; text-align: center; }
+    .stories img { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 1rem; }
+    form input, form textarea { width: 100%; margin-bottom: 1rem; padding: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hair Donation System for Cancer Patients</h1>
+    <p>Giving strands of hope through compassion and technology</p>
+    <img src="assets/donor-survivor-bg.jpg" alt="Banner" width="100%" />
+    <p><a href="#donate" class="btn">How to Donate</a></p>
+  </header>
+
+  <section id="donate">
+    <h2>How to Donate Hair</h2>
+    <ul>
+      <li>Minimum 12 inches long</li>
+      <li>Clean, dry, and bundled properly</li>
+      <li>Pack in zip bag and ship to listed NGOs</li>
+    </ul>
+  </section>
+
+  <section id="success">
+    <h2>Success Stories</h2>
+    <div class="stories">
+      <img src="assets/story1.jpg" alt="Donor Story 1" />
+      <p><em>“Donating my hair gave me purpose beyond myself.” – Anjali</em></p>
+      <img src="assets/story2.jpg" alt="Donor Story 2" />
+      <p><em>“I never imagined something so simple could help someone smile again.” – Dev</em></p>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>Register Your Pledge</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Hair Length (inches)" required />
+      <input type="text" placeholder="Location" required />
+      <textarea placeholder="Message (optional)"></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <section id="certificate">
+    <h2>Donor Certificate Preview</h2>
+    <div class="certificate">
+      <h3>Certificate of Hair Donation</h3>
+      <p>🌸 In recognition of compassion and generosity 🌸</p>
+      <p><strong>[Your Name Here]</strong></p>
+      <p>Thank you for your heartfelt donation to cancer patients.</p>
+      <img src="assets/qr-code.png" alt="QR Code" width="100" />
+      <footer><small>Hair Donation System • Date: DD/MM/YYYY</small></footer>
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <h2>Live Dashboard (Static Preview)</h2>
+    <ul>
+      <li>Ravi Kumar from Chennai pledged 14"</li>
+      <li>Anjali from Trichy pledged 12"</li>
+      <li>Dev from Bengaluru pledged 16"</li>
+    </ul>
+  </section>
+
+</body>
+</html>
