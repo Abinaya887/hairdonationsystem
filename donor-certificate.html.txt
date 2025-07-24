@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hair Donation Certificate</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="certificate">
+    <h1>Certificate of Hair Donation</h1>
+    <p>🌸 In recognition of compassion and generosity 🌸</p>
+    <p class="donor-name">[Donor Name]</p>
+    <p>Your donation brings dignity and hope to cancer patients.</p>
+    <img src="assets/qr-code.png" width="100" />
+    <footer>Issued by Hair Donation System • Date: [DD/MM/YYYY]</footer>
+  </div>
+</body>
+</html>

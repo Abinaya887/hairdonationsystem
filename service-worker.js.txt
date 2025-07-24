@@ -1,0 +1,25 @@
+const cacheName = "hair-donation-cache-v1";
+const assets = [
+  "/",
+  "/index.html",
+  "/styles/style.css",
+  "/modules/donate.html",
+  "/modules/register.html",
+  "/modules/success.html",
+  "/modules/contact.html",
+  "/dashboard.html",
+  "/donor-certificate.html",
+  "/assets/logo.svg"
+];
+
+self.addEventListener("install", event => {
+  event.waitUntil(
+    caches.open(cacheName).then(cache => cache.addAll(assets))
+  );
+});
+
+self.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request).then(response => response || fetch(event.request))
+  );
+});
