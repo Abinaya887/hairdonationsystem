@@ -1,0 +1,70 @@
+<script>
+  const form = document.getElementById("donorForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual submission
+
+    // Grab values
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const length = form.length.value;
+    const location = form.location.value;
+
+    // Basic validation
+    if (!name || !email || !length || !location) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+    if (length < 6) {
+      alert("Hair length must be at least 6 inches.");
+      return;
+    }
+
+    // Confirmation popup
+    alert(`Thank you, ${name}! Your pledge has been received.`);
+
+    // Optionally reset form
+    form.reset();
+  });
+</script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "your-project.firebaseapp.com",
+    databaseURL: "https://your-project.firebaseio.com",
+    projectId: "your-project",
+    storageBucket: "your-project.appspot.com",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  document.getElementById("donorForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const donorData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      length: document.getElementById("length").value,
+      message: document.getElementById("message").value,
+      location: document.getElementById("location").value
+    };
+
+    const donorRef = ref(db, "donors");
+    const newDonor = push(donorRef);
+    set(newDonor, donorData)
+      .then(() => {
+        alert("🎉 Thank you! Your pledge has been saved.");
+        document.getElementById("donorForm").reset();
+      })
+      .catch((error) => {
+        alert("❌ Submission failed: " + error.message);
+      });
+  });
+</script>

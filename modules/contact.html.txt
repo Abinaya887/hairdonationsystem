@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Partnerships</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fdd9c1, #d6b1e0);
+      color: #4a2c53;
+      padding: 2rem;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      background: white;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #5d2475;
+      margin-bottom: 1rem;
+    }
+
+    .partner-list {
+      background: #f9f4fc;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+
+    .partner-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      background: #a249b8;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #d67bc3;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <h1>Get in Touch</h1>
+    <p>If you’d like to volunteer, partner, or share feedback, we’d love to hear from you!</p>
+
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="partner-list">
+      <h2>Supportive Partners</h2>
+      <ul>
+        <li>🌸 Cancer Care Trust – New Delhi</li>
+        <li>✂️ Salon for Hope – Chennai</li>
+        <li>🏥 Wig Donation Wing – Tata Memorial Hospital</li>
+        <li>🤝 You! We're always looking for more collaborators</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("💌 Thank you! We’ll be in touch soon.");
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

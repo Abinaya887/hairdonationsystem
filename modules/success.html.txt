@@ -1,0 +1,16 @@
+<section class="story-gallery">
+  <div class="story-card">
+    <img src="../assets/story1.jpg" alt="Donor smiling" />
+    <blockquote>“Donating hair was the most meaningful thing I’ve ever done.” – Ravi, Age 20</blockquote>
+  </div>
+
+  <div class="story-card">
+    <img src="../assets/story2.jpg" alt="Recipient wearing wig" />
+    <blockquote>“This wig gave me confidence to smile again.” – Meera, Age 17</blockquote>
+  </div>
+
+  <div class="story-card">
+    <img src="../assets/story3.jpg" alt="Donor & survivor together" />
+    <blockquote>“It felt like I gave hope, not just hair.” – Aisha, Donor</blockquote>
+  </div>
+</section>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Donate Hair</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fdd9c1, #d6b1e0);
+      color: #4a2c53;
+    }
+
+    header, section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .donate-hero {
+      background-color: rgba(255, 255, 255, 0.2);
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #3f1543;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      color: #5d2475;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✅ ";
+      margin-right: 0.5rem;
+    }
+
+    ol {
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #ffffff;
+      color: #a249b8;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #f4d9f1;
+    }
+
+    .cta {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="donate-hero">
+    <h1>How to Donate Hair</h1>
+    <p>Your compassionate gift, simplified into a few easy steps</p>
+  </section>
+
+  <section class="requirements">
+    <h2>Donation Guidelines</h2>
+    <ul>
+      <li>Minimum hair length: 6 inches (15 cm)</li>
+      <li>Hair must be clean, dry, and tied before cutting</li>
+      <li>Place donated hair in a sealed zip-lock bag</li>
+      <li>All hair types accepted – straight, curly, or treated</li>
+    </ul>
+  </section>
+
+  <section class="steps">
+    <h2>Steps to Donate</h2>
+    <ol>
+      <li>Measure your hair to ensure length is sufficient</li>
+      <li>Wash, dry, and bundle hair into a ponytail or braid</li>
+      <li>Cut the hair just above the tie using clean scissors</li>
+      <li>Place the hair securely in a zip-lock or envelope</li>
+      <li>Register your pledge and find a collection center</li>
+    </ol>
+  </section>
+
+  <section class="why-donate">
+    <h2>Why Your Hair Donation Matters</h2>
+    <p>Every strand helps restore confidence and dignity to those undergoing cancer treatment. A single act of kindness brings warmth, hope, and healing.</p>
+  </section>
+
+  <div class="cta">
+    <a href="register.html" class="cta-button">Pledge Your Hair Now</a>
+  </div>
+
+</body>
+</html>
